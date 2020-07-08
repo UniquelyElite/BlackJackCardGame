@@ -23,12 +23,12 @@ function start() {
     console.log(cardCounter + ' cards are left in the deck.')
     console.log(deck2[0] + ' (deck2[0]) should equal ' + drawnCard)
     dealersCardDisplay.innerHTML = dealersCardDisplay.innerHTML + placeHolder + ', ';
-    drawCard();
-    dealerDrawCard1st();
-    drawCard();
     foldButton.style.visibility="visible";
     hitButton.style.visibility="visible";
     startButton.style.visibility="hidden";
+    drawCard();
+    dealerDrawCard1st();
+    drawCard();
     return drawnCard;
 }
 function dealerDrawCard1st() {
