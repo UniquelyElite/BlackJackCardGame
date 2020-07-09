@@ -3,20 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Black Jack</title>
     <script src="ScriptForBlackJack.js"></script>
+    <style>
+        .textStyle {
+            color: green;
+            background-color: black;
+            border-style: none;
+            font-family: Cascadia-Code;
+        }
+        @font-face {
+            font-family: Cascadia-Code;
+            src: url(./cascadia-code/CascadiaCode-Regular-VTT.ttf);
+        }
+    </style>
 </head>
-<body style="text-align: center;">
-    <h1 id="dealersTable" style="visibility: hidden;">Dealers Side Of The Table</h1>
-     <p id="dealersCardDisplay"></p>
-     <h1 id="titleHeading" style="visibility: visible;">Black Jack With An AI Dealer</h1>
-    <p id="titleParagraph" style="visibility: visible;" >~Uniquely Elite~</p>
-    <h1 id="yourTable" style="visibility: hidden;">Your Side Of The Table</h1>
-    <p id="cardDisplay"></p>
-<button id="foldButton" type="button" style="visibility: hidden; font-size: 50px;" onclick="fold()">STAND</button>
-    <button id="startButton" type="button" style="visibility: visible; font-size: 50px;" onclick="start()">START</button>
-    <button id="hitButton" type="button" style="visibility: hidden; font-size: 50px;" onclick="drawCard()">HIT </button>
+<body style="text-align: center; background-color: black;">
+    <h1 class="textStyle" id="dealersTable" style="visibility: hidden;">Dealers Side Of The Table</h1>
+     <p class="textStyle" id="dealersCardDisplay"></p>
+     <h1 class="textStyle" id="titleHeading" style="visibility: visible;">Black Jack</h1>
+    <p class="textStyle" id="titleParagraph" style="visibility: visible;" >~Uniquely Elite~</p>
+    <h1 class="textStyle" id="yourTable" style="visibility: hidden;">Your Side Of The Table</h1>
+    <p class="textStyle" id="cardDisplay"></p>
+    <button class="textStyle" id="startButton" type="button" style="visibility: visible; font-size: 50px;" onclick="start()">START</button>
     <br></br>
-    <button id="outcomeRestartButton" type="button" style="visibility: hidden; font-size: 50px;" onclick=""></button>
+    <button class="textStyle" id="foldButton" type="button" style="visibility: hidden; font-size: 50px;" onclick="fold()">STAND</button>
+    <br></br>
+    <button class="textStyle" id="hitButton" type="button" style="visibility: hidden; font-size: 50px;" onclick="drawCard()">HIT </button>
+    <br></br>
+    <button class="textStyle" id="outcomeRestartButton" type="button" style="visibility: hidden; font-size: 50px;" onclick="location.reload()"></button>
 </body>
 </html>
